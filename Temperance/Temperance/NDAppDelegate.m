@@ -43,12 +43,17 @@ void nd_log(NSString* msg, char* file, int line, char* method)
 
 
 // Logging
-- (void)log:(NSString*)msg
+- (void)log:(NSString*)msg withHeader:(NSString*)header
 {
     NSLog(msg);
     NSTextStorage *storage = [self.logView textStorage];
+   
+    NSAttributedString *attrHeader = [[NSAttributedString alloc] initWithString:header];
+    NSAttributedString *attrMsg = [[NSAttributedString alloc] initWithString:msg];
+    
     [storage beginEditing];
-    [storage appendAttributedString:[[NSAttributedString alloc] initWithString:msg]];
+    [storage appendAttributedString:attrHeader];
+    [storage appendAttributedString:attrMsg];
     [storage endEditing];
     NSRange range = NSMakeRange ([[self.logView string] length], 0);
     [self.logView scrollRangeToVisible: range];    
@@ -58,7 +63,9 @@ void nd_log(NSString* msg, char* file, int line, char* method)
 {
     NSString *path = [NSString stringWithUTF8String:file];
     NSString *name = [path lastPathComponent];
-    [self log: [NSString stringWithFormat:@"[%@:%i (%s)] -- %@\n", name, line, method, msg]];
+    [self
+        log: [NSString stringWithFormat:@" -- %@\n", msg]
+     withHeader: [NSString stringWithFormat:@"[%@:%i (%s)]", name, line, method]];
 }
 
 

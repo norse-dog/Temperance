@@ -38,7 +38,21 @@
 @end
 
 
-@interface NDCommandCommand : NSObject <NDCommand>
+@interface NDStatsCommand : NSObject <NDCommand>
+
+-(BOOL)execute:(NSArray*)words;
+
+@end
+
+
+@interface NDHelpCommand : NSObject <NDCommand>
+
+-(BOOL)execute:(NSArray*)words;
+
+@end
+
+
+@interface NDQuitCommand : NSObject <NDCommand>
 
 -(BOOL)execute:(NSArray*)words;
 

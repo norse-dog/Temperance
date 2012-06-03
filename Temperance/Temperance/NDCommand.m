@@ -23,7 +23,10 @@
              @"NDLogCommand", @"log",
              @"NDSysCommand", @"sys",
              @"NDSysCommand", @"system",
-             @"NDCommandCommand", @"stats",
+             @"NDStatsCommand", @"stats",
+             @"NDHelpCommand", @"help",
+             @"NDHelpCommand", @"?",
+             @"NDQuitCommand", @"quit",
              nil];
     }
     
@@ -99,12 +102,11 @@
 @end
 
 
-
 // Stats command
 #include <mach/mach.h>
 #include <mach/task.h>
 
-@implementation NDCommandCommand : NSObject
+@implementation NDStatsCommand : NSObject
 
 -(BOOL)execute:(NSArray*)words
 {
@@ -133,3 +135,38 @@
 }
 
 @end
+
+
+// Help command
+@implementation NDHelpCommand : NSObject
+
+-(BOOL)execute:(NSArray*)words
+{
+    NDLog(@"Help command called");
+
+    NDAppDelegate *app = [NDAppDelegate instance];
+    [app.tabView selectLastTabViewItem:nil];
+    NDLog(@"Help: you can use the following commands: help, quit, log, sys, stats.");
+    [app.window makeFirstResponder:app.cmdText];
+    return true;
+}
+
+@end
+
+
+
+
+// Quit command
+@implementation NDQuitCommand : NSObject
+
+-(BOOL)execute:(NSArray*)words
+{
+    NDLog(@"Quit command called");
+
+    [[NSApplication sharedApplication] terminate:nil];
+
+    return true;
+}
+
+@end
+
