@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		256ABA3015765F120046BAE5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 256ABA2F15765F120046BAE5 /* Cocoa.framework */; };
+		256ABA3A15765F120046BAE5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 256ABA3815765F120046BAE5 /* InfoPlist.strings */; };
+		256ABA3C15765F120046BAE5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 256ABA3B15765F120046BAE5 /* main.m */; };
+		256ABA4015765F120046BAE5 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 256ABA3E15765F120046BAE5 /* Credits.rtf */; };
+		256ABA4315765F120046BAE5 /* NDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256ABA4215765F120046BAE5 /* NDAppDelegate.m */; };
+		256ABA4615765F120046BAE5 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 256ABA4415765F120046BAE5 /* MainMenu.xib */; };
+		256ABA4915765F120046BAE5 /* Temperance.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 256ABA4715765F120046BAE5 /* Temperance.xcdatamodeld */; };
+		256ABA5115765F130046BAE5 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 256ABA5015765F130046BAE5 /* SenTestingKit.framework */; };
+		256ABA5215765F130046BAE5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 256ABA2F15765F120046BAE5 /* Cocoa.framework */; };
+		256ABA5A15765F130046BAE5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 256ABA5815765F130046BAE5 /* InfoPlist.strings */; };
+		256ABA5D15765F130046BAE5 /* TemperanceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 256ABA5C15765F130046BAE5 /* TemperanceTests.m */; };
+		256ABA691579F3C80046BAE5 /* NDCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 256ABA681579F3C80046BAE5 /* NDCommand.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		256ABA5315765F130046BAE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 256ABA2215765F120046BAE5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 256ABA2A15765F120046BAE5;
+			remoteInfo = Temperance;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		256ABA2B15765F120046BAE5 /* Temperance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Temperance.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		256ABA2F15765F120046BAE5 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		256ABA3215765F120046BAE5 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		256ABA3315765F120046BAE5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		256ABA3415765F120046BAE5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		256ABA3715765F120046BAE5 /* Temperance-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Temperance-Info.plist"; sourceTree = "<group>"; };
+		256ABA3915765F120046BAE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		256ABA3B15765F120046BAE5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = main.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		256ABA3D15765F120046BAE5 /* Temperance-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Temperance-Prefix.pch"; sourceTree = "<group>"; };
+		256ABA3F15765F120046BAE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		256ABA4115765F120046BAE5 /* NDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = NDAppDelegate.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		256ABA4215765F120046BAE5 /* NDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = NDAppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		256ABA4515765F120046BAE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		256ABA4815765F120046BAE5 /* Temperance.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Temperance.xcdatamodel; sourceTree = "<group>"; };
+		256ABA4F15765F130046BAE5 /* TemperanceTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TemperanceTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		256ABA5015765F130046BAE5 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		256ABA5715765F130046BAE5 /* TemperanceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TemperanceTests-Info.plist"; sourceTree = "<group>"; };
+		256ABA5915765F130046BAE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		256ABA5B15765F130046BAE5 /* TemperanceTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = TemperanceTests.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		256ABA5C15765F130046BAE5 /* TemperanceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = TemperanceTests.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		256ABA661579CF0A0046BAE5 /* Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = Utils.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		256ABA671579F3C80046BAE5 /* NDCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = NDCommand.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		256ABA681579F3C80046BAE5 /* NDCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = NDCommand.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		256ABA2815765F120046BAE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				256ABA3015765F120046BAE5 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		256ABA4B15765F130046BAE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				256ABA5115765F130046BAE5 /* SenTestingKit.framework in Frameworks */,
+				256ABA5215765F130046BAE5 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		256ABA2015765F120046BAE5 = {
+			isa = PBXGroup;
+			children = (
+				256ABA3515765F120046BAE5 /* Temperance */,
+				256ABA5515765F130046BAE5 /* TemperanceTests */,
+				256ABA2E15765F120046BAE5 /* Frameworks */,
+				256ABA2C15765F120046BAE5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		256ABA2C15765F120046BAE5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				256ABA2B15765F120046BAE5 /* Temperance.app */,
+				256ABA4F15765F130046BAE5 /* TemperanceTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		256ABA2E15765F120046BAE5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				256ABA2F15765F120046BAE5 /* Cocoa.framework */,
+				256ABA5015765F130046BAE5 /* SenTestingKit.framework */,
+				256ABA3115765F120046BAE5 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		256ABA3115765F120046BAE5 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				256ABA3215765F120046BAE5 /* AppKit.framework */,
+				256ABA3315765F120046BAE5 /* CoreData.framework */,
+				256ABA3415765F120046BAE5 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		256ABA3515765F120046BAE5 /* Temperance */ = {
+			isa = PBXGroup;
+			children = (
+				256ABA4115765F120046BAE5 /* NDAppDelegate.h */,
+				256ABA4215765F120046BAE5 /* NDAppDelegate.m */,
+				256ABA671579F3C80046BAE5 /* NDCommand.h */,
+				256ABA681579F3C80046BAE5 /* NDCommand.m */,
+				256ABA4415765F120046BAE5 /* MainMenu.xib */,
+				256ABA4715765F120046BAE5 /* Temperance.xcdatamodeld */,
+				256ABA3615765F120046BAE5 /* Supporting Files */,
+				256ABA661579CF0A0046BAE5 /* Utils.h */,
+			);
+			path = Temperance;
+			sourceTree = "<group>";
+		};
+		256ABA3615765F120046BAE5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				256ABA3715765F120046BAE5 /* Temperance-Info.plist */,
+				256ABA3815765F120046BAE5 /* InfoPlist.strings */,
+				256ABA3B15765F120046BAE5 /* main.m */,
+				256ABA3D15765F120046BAE5 /* Temperance-Prefix.pch */,
+				256ABA3E15765F120046BAE5 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		256ABA5515765F130046BAE5 /* TemperanceTests */ = {
+			isa = PBXGroup;
+			children = (
+				256ABA5B15765F130046BAE5 /* TemperanceTests.h */,
+				256ABA5C15765F130046BAE5 /* TemperanceTests.m */,
+				256ABA5615765F130046BAE5 /* Supporting Files */,
+			);
+			path = TemperanceTests;
+			sourceTree = "<group>";
+		};
+		256ABA5615765F130046BAE5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				256ABA5715765F130046BAE5 /* TemperanceTests-Info.plist */,
+				256ABA5815765F130046BAE5 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		256ABA2A15765F120046BAE5 /* Temperance */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 256ABA6015765F130046BAE5 /* Build configuration list for PBXNativeTarget "Temperance" */;
+			buildPhases = (
+				256ABA2715765F120046BAE5 /* Sources */,
+				256ABA2815765F120046BAE5 /* Frameworks */,
+				256ABA2915765F120046BAE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Temperance;
+			productName = Temperance;
+			productReference = 256ABA2B15765F120046BAE5 /* Temperance.app */;
+			productType = "com.apple.product-type.application";
+		};
+		256ABA4E15765F130046BAE5 /* TemperanceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 256ABA6315765F130046BAE5 /* Build configuration list for PBXNativeTarget "TemperanceTests" */;
+			buildPhases = (
+				256ABA4A15765F130046BAE5 /* Sources */,
+				256ABA4B15765F130046BAE5 /* Frameworks */,
+				256ABA4C15765F130046BAE5 /* Resources */,
+				256ABA4D15765F130046BAE5 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				256ABA5415765F130046BAE5 /* PBXTargetDependency */,
+			);
+			name = TemperanceTests;
+			productName = TemperanceTests;
+			productReference = 256ABA4F15765F130046BAE5 /* TemperanceTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		256ABA2215765F120046BAE5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RR;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 256ABA2515765F120046BAE5 /* Build configuration list for PBXProject "Temperance" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 256ABA2015765F120046BAE5;
+			productRefGroup = 256ABA2C15765F120046BAE5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				256ABA2A15765F120046BAE5 /* Temperance */,
+				256ABA4E15765F130046BAE5 /* TemperanceTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		256ABA2915765F120046BAE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				256ABA3A15765F120046BAE5 /* InfoPlist.strings in Resources */,
+				256ABA4015765F120046BAE5 /* Credits.rtf in Resources */,
+				256ABA4615765F120046BAE5 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		256ABA4C15765F130046BAE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				256ABA5A15765F130046BAE5 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		256ABA4D15765F130046BAE5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		256ABA2715765F120046BAE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				256ABA3C15765F120046BAE5 /* main.m in Sources */,
+				256ABA4315765F120046BAE5 /* NDAppDelegate.m in Sources */,
+				256ABA4915765F120046BAE5 /* Temperance.xcdatamodeld in Sources */,
+				256ABA691579F3C80046BAE5 /* NDCommand.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		256ABA4A15765F130046BAE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				256ABA5D15765F130046BAE5 /* TemperanceTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		256ABA5415765F130046BAE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 256ABA2A15765F120046BAE5 /* Temperance */;
+			targetProxy = 256ABA5315765F130046BAE5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		256ABA3815765F120046BAE5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				256ABA3915765F120046BAE5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		256ABA3E15765F120046BAE5 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				256ABA3F15765F120046BAE5 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		256ABA4415765F120046BAE5 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				256ABA4515765F120046BAE5 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		256ABA5815765F130046BAE5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				256ABA5915765F130046BAE5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		256ABA5E15765F130046BAE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		256ABA5F15765F130046BAE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		256ABA6115765F130046BAE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Temperance/Temperance-Prefix.pch";
+				INFOPLIST_FILE = "Temperance/Temperance-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		256ABA6215765F130046BAE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Temperance/Temperance-Prefix.pch";
+				INFOPLIST_FILE = "Temperance/Temperance-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		256ABA6415765F130046BAE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Temperance.app/Contents/MacOS/Temperance";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Temperance/Temperance-Prefix.pch";
+				INFOPLIST_FILE = "TemperanceTests/TemperanceTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		256ABA6515765F130046BAE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Temperance.app/Contents/MacOS/Temperance";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Temperance/Temperance-Prefix.pch";
+				INFOPLIST_FILE = "TemperanceTests/TemperanceTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		256ABA2515765F120046BAE5 /* Build configuration list for PBXProject "Temperance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				256ABA5E15765F130046BAE5 /* Debug */,
+				256ABA5F15765F130046BAE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		256ABA6015765F130046BAE5 /* Build configuration list for PBXNativeTarget "Temperance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				256ABA6115765F130046BAE5 /* Debug */,
+				256ABA6215765F130046BAE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		256ABA6315765F130046BAE5 /* Build configuration list for PBXNativeTarget "TemperanceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				256ABA6415765F130046BAE5 /* Debug */,
+				256ABA6515765F130046BAE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		256ABA4715765F120046BAE5 /* Temperance.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				256ABA4815765F120046BAE5 /* Temperance.xcdatamodel */,
+			);
+			currentVersion = 256ABA4815765F120046BAE5 /* Temperance.xcdatamodel */;
+			path = Temperance.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 256ABA2215765F120046BAE5 /* Project object */;
+}
