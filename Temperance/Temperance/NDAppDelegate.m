@@ -23,11 +23,7 @@
 
 @synthesize commanding = __commanding;
 
-+(NDAppDelegate*)instance
-{
-    return ((NDAppDelegate*)[NSApplication sharedApplication].delegate);
-}
-
+// TODO: factor out
 void nd_log(NSString* msg, char* file, int line, char* method)
 {
     [[NDAppDelegate instance]
@@ -35,19 +31,12 @@ void nd_log(NSString* msg, char* file, int line, char* method)
      ];
 }
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
-{
-    // Insert code here to initialize your application
-    __commanding = [[NDCommanding alloc] init];
-}
-
-
 // Logging
 - (void)log:(NSString*)msg withHeader:(NSString*)header
 {
     NSLog(msg);
     NSTextStorage *storage = [self.logView textStorage];
-   
+    
     NSAttributedString *attrHeader = [[NSAttributedString alloc] initWithString:header];
     NSAttributedString *attrMsg = [[NSAttributedString alloc] initWithString:msg];
     
@@ -55,6 +44,7 @@ void nd_log(NSString* msg, char* file, int line, char* method)
     [storage appendAttributedString:attrHeader];
     [storage appendAttributedString:attrMsg];
     [storage endEditing];
+    
     NSRange range = NSMakeRange ([[self.logView string] length], 0);
     [self.logView scrollRangeToVisible: range];    
 }
@@ -64,10 +54,24 @@ void nd_log(NSString* msg, char* file, int line, char* method)
     NSString *path = [NSString stringWithUTF8String:file];
     NSString *name = [path lastPathComponent];
     [self
-        log: [NSString stringWithFormat:@" -- %@\n", msg]
+     log: [NSString stringWithFormat:@" -- %@\n", msg]
      withHeader: [NSString stringWithFormat:@"[%@:%i (%s)]", name, line, method]];
 }
 
+
+
+
+
++(NDAppDelegate*)instance
+{
+    return ((NDAppDelegate*)[NSApplication sharedApplication].delegate);
+}
+
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
+{
+    // Insert code here to initialize your application
+    __commanding = [[NDCommanding alloc] init];
+}
 
 // Performs the save action for the application, which is to send the save: message to the application's managed object context. Any encountered errors are presented to the user.
 - (IBAction)saveAction:(id)sender

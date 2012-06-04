@@ -30,7 +30,7 @@
 +(NDAppDelegate*)instance;
 
 // Methods
-- (void)log:(NSString*)msg;
+- (void)log:(NSString*)msg withHeader:(NSString*)header;
 - (void)log:(NSString*)msg file:(char*)file line:(int)line method:(char*)method;
 
 // Actions
